@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startup-school Django</title>
+    <link rel="stylesheet" href="{% static "css/custom.css" %}">
+</head>
+<body>
+    
+    <a href="{% url 'home' %}">홈</a>
+    <a href="{% url 'articles' %}">글목록</a>
+    <a href="{% url 'location' %}">오시는 길</a>
+    <a href="{% url 'terms' %}">약관</a>
+
+    {% block content %} {% endblock content %}
+
+</body>
+</html>
+
